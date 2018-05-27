@@ -10,6 +10,7 @@ body {
     background-size: cover;
     background-position: center center;
     display: flex;
+    background-attachment: fixed;
 }
 
 .container {
@@ -335,7 +336,7 @@ body {
 }
 
 .ba-main-subscribe__content {
-    padding: 180px 0;
+    padding: 140px 0;
 }
 
 .ba-main-subscribe__content__title {
@@ -418,27 +419,76 @@ body {
     color: #f72b3b;
 }
 
-/*footer*/
+/* Contact */
+
+.ba-main-contact {
+    height: 100%;
+    background: url("../img/feedback-bg.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.ba-main-contact__title {
+    text-align: center;
+}
+
+.ba-main-contact__title--big {
+    margin: 0;
+    padding-top: 60px;
+    font-size: 64px;
+}
+
+.ba-main-contact__flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px 0;
+}
+
+.ba-main-contact__flex__form input, textarea {
+    width: 400px;
+    padding: 0.5em 0 0.5em 0.6em;
+    margin: 0.5em 0;
+    background-color: rgba(0, 196, 196, 0.6);
+    color: #FFF;
+    border: none;
+    border-left: 6px solid transparent;
+}
+
+.ba-main-contact__flex__form input::placeholder, textarea::placeholder {
+    color: #FFF;
+}
+
+.ba-main-contact__flex__form input:focus, textarea:focus {
+    outline: none;
+    border-left: 6px solid #355b82;
+	background: rgb(0, 196, 196);
+	transition: all .4s ease;
+}
+
+/* Footer */
 
 footer {
     background: #262626;
-    color: rgba(255, 255, 255, .8);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-flex {
     padding: 1.6em 0;
     display: flex;
     justify-content: space-between;
-	align-items: center;
+    align-items: center;
 }
 
 .footer__logo {
-	font-family: 'Pacifico', cursive;
-	font-size: 28px;
-	display: inline-block;
-	position: absolute;
-	transform: translateX(-50%);
-	left: 50%;
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+    display: inline-block;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
 }
 
 .footer__text--red {
