@@ -5,12 +5,16 @@ body {
     font-size: 18px;
 }
 
-body h1 {
+h1 {
     font-size: 60px;
 }
 
-body h2 {
+h2 {
     font-size: 78px;
+}
+
+body button{
+    font-size: 20px;
 }
 
 
@@ -346,7 +350,6 @@ body h2 {
 .ba-main-subscribe__content__title {
     margin: 0;
     margin-bottom: 30px;
-    font-size: 40px;
 }
 
 .ba-main-subscrie__content__text {
@@ -500,10 +503,13 @@ footer {
 
 /* <MEDIA REQUIRES> */
 @media screen and (max-width:1100px){
-    body p{
+    p{
         font-size: 1.9em;
     }
 
+    button{
+        font-size: 2em;
+    }
     .ba-header__content p {
        line-height: 50px;
     }
@@ -547,7 +553,21 @@ footer {
     .ba-main-blog__content__img{
         display: block;
     }
+    .ba-main__services-content h2 {
+        padding-left: 45px;
+    }
+    .ba-main-contact{
+        background-attachment: inherit;
+    }
+    .ba-main-subscribe__content {
+        padding: 100px 0;
+    }
+
+    .ba-main-subscribe__content__title {
+        margin-bottom: 10px;
+    }
+
+    .ba-main-subscrie__content__text {
+        margin-bottom: 10px;
+    }
 }
-
-
-
