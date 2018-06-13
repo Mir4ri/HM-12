@@ -2,7 +2,17 @@ body {
     margin: 0 auto;
     font-family: 'Raleway', sans-serif;
     height: 100%;
+    font-size: 18px;
 }
+
+body h1 {
+    font-size: 60px;
+}
+
+body h2 {
+    font-size: 78px;
+}
+
 
 .ba-header {
     height: 100%;
@@ -56,7 +66,6 @@ body {
 .menu__link {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 16px;
     text-decoration: none;
     color: #262626;
     padding: 5px 0;
@@ -83,12 +92,11 @@ body {
 }
 
 .ba-header__content h1 {
-    font-size: 60px;
+    
     font-weight: 800;
 }
 
 .ba-header__content p {
-    font-size: 17px;
     font-weight: 300;
     line-height: 25px;
 }
@@ -146,14 +154,12 @@ body {
 
 .about-content h2 {
     margin: 0;
-    font-size: 90px;
     font-weight: 700;
     color: #fff;
 }
 
 .about-content p {
     width: 90%;
-    font-size: 18px;
     line-height: 25px;
     font-weight: 300;
     color: #fff;
@@ -255,14 +261,12 @@ body {
 }
 
 .gallery-content-description h2 {
-    font-size: 90px;
     font-weight: 700;
     margin: 50px 0 0;
     color: #262626;
 }
 
 .gallery-content-description p {
-    font-size: 17px;
     font-weight: 300;
     color: #262626;
     line-height: 27px;
@@ -348,7 +352,6 @@ body {
 .ba-main-subscrie__content__text {
     margin-bottom: 30px;
     width: 570px;
-    font-size: 17px;
 }
 
 .ba-main-subscribe__content__input {
@@ -392,7 +395,6 @@ body {
 }
 
 .ba-main-blog__content__text {
-    font-size: 17px;
     margin-bottom: 30px;
 }
 
@@ -494,3 +496,58 @@ footer {
 .footer__text--red {
     color: #cc1e44;
 }
+
+
+/* <MEDIA REQUIRES> */
+@media screen and (max-width:1100px){
+    body p{
+        font-size: 1.9em;
+    }
+
+    .ba-header__content p {
+       line-height: 50px;
+    }
+    .about-content p {
+        line-height: 50px;
+    }
+    .container {
+        width: 900px;
+    }
+
+    .ba-header{
+        margin-bottom: -150px;
+        background-attachment: inherit;
+    }
+
+    .ba-header__main-menu{
+        margin-top: 0;
+    }
+
+    .ba-main__services-content {
+        height: 120vh; 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .ba-main__services-content #tomatoes{
+        display: none;
+        
+    }
+
+    .showcase-row-1{
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-gap: 20px;
+    }
+    .gallery-item--media{
+        margin: 0 auto;
+    }
+    
+    .ba-main-blog__content__img{
+        display: block;
+    }
+}
+
+
+
